@@ -69,4 +69,12 @@ def add_to_csv(array, file_name)
   end
 end
 
-get_goods_from_page('https://www.petsonic.com/snacks-huesos-para-perros/', 'file.csv')
+puts('Write file name')
+file_name = gets
+
+puts('Past category URL')
+category_url = gets.to_s.strip
+
+get_goods_from_page(category_url, file_name)
+
+# https://www.petsonic.com/snacks-higiene-dental-para-perros/
